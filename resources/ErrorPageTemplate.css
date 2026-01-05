@@ -1,0 +1,57 @@
+BODY {
+	MARGIN-TOP: 20px; BACKGROUND-IMAGE: url(background_gradient.jpg); MARGIN-LEFT: 20px; COLOR: #575757; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: "Segoe UI", "verdana", "arial"; BACKGROUND-COLOR: #e8eaef
+}
+BODY.securityError {
+	MARGIN-TOP: 20px; BACKGROUND-IMAGE: url(background_gradient_red.jpg); MARGIN-LEFT: 20px; BACKGROUND-REPEAT: repeat-x; FONT-FAMILY: "Segoe UI", "verdana" , "Arial"; BACKGROUND-COLOR: #e8eaef
+}
+BODY.tabInfo {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #f4f4f4
+}
+A {
+	FONT-WEIGHT: normal; FONT-SIZE: 1em; MARGIN-LEFT: 0px; VERTICAL-ALIGN: top; COLOR: rgb(19,112,171); TEXT-DECORATION: none
+}
+A:link {
+	VERTICAL-ALIGN: top; COLOR: rgb(19,112,171); TEXT-DECORATION: none
+}
+A:visited {
+	VERTICAL-ALIGN: top; COLOR: rgb(19,112,171); TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: rgb(7,74,229); TEXT-DECORATION: underline
+}
+P {
+	FONT-SIZE: 0.9em
+}
+H1 {
+	MARGIN-TOP: 7px; FONT-WEIGHT: normal; FONT-SIZE: 1.1em; MARGIN-BOTTOM: 4px; VERTICAL-ALIGN: bottom; COLOR: #4465a2
+}
+H2 {
+	MARGIN-TOP: 20px; FONT-WEIGHT: normal; FONT-SIZE: 0.9em; MARGIN-BOTTOM: 1px
+}
+H3 {
+	MARGIN-TOP: 10px; FONT-WEIGHT: normal; FONT-SIZE: 0.9em; MARGIN-BOTTOM: 1px
+}
+H4 {
+	MARGIN-TOP: 12px; FONT-WEIGHT: normal; FONT-SIZE: 0.9em; MARGIN-BOTTOM: 1px
+}
+H5 {
+	MARGIN-TOP: 1px; FONT-WEIGHT: normal; FONT-SIZE: 0.9em; MARGIN-BOTTOM: 0px; COLOR: #575757
+}
+.actionIcon {
+	MARGIN-TOP: 0px; VERTICAL-ALIGN: middle; MARGIN-RIGHT: 6px
+}
+.infoBlock {
+	DISPLAY: block; PADDING-LEFT: 25px; FONT-SIZE: 0.9em; COLOR: #575757
+}
+.errorCodeAndDivider {
+	FONT-WEIGHT: normal; FONT-SIZE: 0.7em; COLOR: #787878
+}
+UL {
+	MARGIN-TOP: 1px; LIST-STYLE-POSITION: outside; FONT-SIZE: 0.9em; MARGIN-BOTTOM: 1px; PADDING-BOTTOM: 1px; LINE-HEIGHT: 1.3em; PADDING-TOP: 1px
+}
+OL {
+	MARGIN-TOP: 1px; LIST-STYLE-POSITION: outside; FONT-SIZE: 0.9em; MARGIN-BOTTOM: 1px; PADDING-BOTTOM: 1px; LINE-HEIGHT: 1.3em; PADDING-TOP: 1px
+}
+.divider {
+	BORDER-BOTTOM: #b6bcc6 1px solid
+}
