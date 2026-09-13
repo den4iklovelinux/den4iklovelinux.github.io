@@ -1,7 +1,7 @@
  /* The sidebar menu */
  @font-face {
-     font-family: 'PS3';
-     src: URL('/resources/PS3.ttf') format('truetype');
+     font-family: 'EternalBold';
+     src: URL('/resources/eternalui_bold.ttf') format('truetype');
  }
 .container {
     background-color: #2a2e33;
@@ -37,55 +37,114 @@ a {
     display: block;
     bottom: 0px;
 }
-.title
+.titleMKHL
 {
-    padding-top: 20px;
-    text-align: center;
-    font-family: "Funnel Display", sans-serif;
+    /* padding-top: 20px; */
+    text-align: left;
+    font-family: "EternalBold", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-size: 60px;
-    background: linear-gradient(to bottom, #00000000, #e4e9f0);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    margin-bottom: 0;
+    font-size: 72px;
+    color: #e4e9f0;
+    margin: 0 0 0 0;
 }
-.titlename
+.titleci
 {
     padding-top: 20px;
-    text-align: center;
-    font-family: "Funnel Display", sans-serif;
+    text-align: left;
+    font-family: "EternalBold", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
-    font-size: 60px;
-    padding-left: 10px;
-    background: linear-gradient(to bottom, #e4e9f0, #00000000);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    font-size: 14px;
+    color: #e4e9f040;
     margin-bottom: 0;
-    
+
 }
-.titlediv
+.textdiv
 {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    margin-left: 30px;
+    color: #e4e9f0;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mkhllogo
+{
+    margin-right: 5%;
+    margin-top: 5%;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 body {
 
   margin: 0;
 }
-.header
+.features
 {
     font-family: "Funnel Display", sans-serif;
     font-optical-sizing: auto;
     font-weight: 450;
     font-style: normal;
-    font-size: 36px;
+    font-size: 18px;
+    color: #e4e9f0;
+    margin-left: 20px;
 }
+.download
+{
+    display: flex;
+    justify-content: center;
+}
+.download button
+{
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 40px;
+    font-size: 24px;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.download button:hover
+{
+    opacity: 80%;
+}
+.sourcecode:active
+{
+    /* opacity: 80%; */
+    /* border-radius: 20px; */
+    color: #3a3e43;
+    background-color: #e4e9f0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* font-size: 20px; */
+}
+.releases:active
+{
+    /* opacity: 80%; */
+    /* border-radius: 20px; */
+    color: #e4e9f0;
+    background-color: #3a3e43;
+    /* font-size: 20px; */
+}
+.releases
+{
+    background-color: #e4e9f0;
+    color: #3a3e43;
+    opacity: 85%;
+}
+.sourcecode
+{
+    color: #e4e9f0;
+    background-color: #3a3e43;
+}
+
 .main
 {
     font-family: "Funnel Display", sans-serif;
@@ -120,10 +179,6 @@ body {
     border: 2px;
     padding-bottom: 4px;
 }
-.header
-{
-    display: flex;
-}
 footer {
   width: 100%;
   height: 100px;
@@ -132,9 +187,9 @@ footer {
   background: repeating-linear-gradient(
     -45deg,
     #00000000,
-    #00000000 10px,
-    #e4e9f0 10px,
-    #e4e9f0 20px
+    #00000000 7px,
+    #e4e9f0 7px,
+    #e4e9f0 15px
   );
  flex-direction: column;
 }
@@ -246,6 +301,14 @@ footer {
   color:#e4e9f0;
 }
 
+.description
+{
+      font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
 @media screen and (max-width: 768px) {
     .title, .titlename {
         font-size: 40px;
@@ -259,7 +322,7 @@ footer {
         margin-right: 15px;
         padding: 0;
     }
-    .header, .projects h1, .cureentlyusing h1, .other h1 {
+    .projects h1, .cureentlyusing h1, .other h1 {
                 font-size: 28px;
             }
 .link {
@@ -317,5 +380,4 @@ footer {
     background-clip: text;
     color: transparent;
     margin-bottom: 0;
-
 }
