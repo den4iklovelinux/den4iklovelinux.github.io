@@ -158,7 +158,7 @@ footer {
 {
     display: flex;
     justify-content: space-between;
-
+    direction: row;
 }
 .feature img
 {
