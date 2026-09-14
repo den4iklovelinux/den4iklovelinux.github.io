@@ -154,13 +154,13 @@ footer {
     font-style: normal;
     font-size: 18px;
 }
-.feature
+.feat
 {
     display: flex;
     justify-content: space-between;
     direction: row;
 }
-.feature img
+.feat img
 {
     padding-right: 30px;
 }
