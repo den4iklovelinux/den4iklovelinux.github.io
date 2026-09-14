@@ -191,11 +191,11 @@ footer {
         margin-right: 15px;
         padding: 0;
     }
-    .feature
+    .feat
     {
         flex-direction: column;
     }
-    .feature img
+    .feat img
     {
         padding: 0;
     }
