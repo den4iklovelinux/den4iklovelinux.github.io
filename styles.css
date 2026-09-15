@@ -75,8 +75,8 @@ a {
     justify-content: center;
 }
 body {
-
   margin: 0;
+  overflow-x: hidden;
 }
 .header
 {
@@ -115,6 +115,7 @@ body {
     font-size: 18px;
     user-select: none;
     color: #e4e9f0;
+    min-width: 0;
 }
 .link
 {
@@ -271,7 +272,7 @@ footer {
         margin-right: 15px !important;
         padding: 0;
     }
-    .header, .projects h1, .cureentlyusing h1, .other h1 {
+    .header, .projects h1, .cureentlyusing h1, .other h1 , h1{
                 font-size: 28px;
             }
 .link {
@@ -281,10 +282,21 @@ footer {
     .container
     {
         width: 100%;
+        min-width: 0;
     }
     .projectitem, .weblogitem
     {
         width: 100%;
+    }
+    .weblog
+    {
+        word-break: break-all;
+        font-size: 16px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 0;
     }
 }
 .mutual {
@@ -334,7 +346,10 @@ footer {
 pre
 {
     background-color: #0000003f;
-    border: 1px solid #e4e9f03f
+    border: 1px solid #e4e9f03f;
+    overflow-x: auto;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 code
 {
