@@ -12,7 +12,7 @@
     row-gap:77px;
 }
  /* Style page content */
- .main, .projects, .cureentlyusing, .other {
+ .main, .projects, .webloglist, .cureentlyusing, .other {
      background:#2a2e33;
      position: relative;
      top: 65px;
@@ -105,6 +105,17 @@ body {
     user-select: none;
     color: #e4e9f0;
 }
+.weblog
+{
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+    /* font-size: 36px; */
+    font-size: 18px;
+    user-select: none;
+    color: #e4e9f0;
+}
 .link
 {
     font-family: "Funnel Display", sans-serif;
@@ -138,7 +149,7 @@ footer {
   );
  flex-direction: column;
 }
-.projects h1
+.projects h1, .webloglist h1
 {
     font-family: "Funnel Display", sans-serif;
     font-optical-sizing: auto;
@@ -146,7 +157,8 @@ footer {
     font-style: normal;
     font-size: 36px;
 }
-.projectitem
+
+.projectitem, .weblogitem
 {
     font-family: "Funnel Display", sans-serif;
     font-optical-sizing: auto;
@@ -165,22 +177,22 @@ footer {
 {
     height: 48px;
 }
-.projectitem h4, .projectitem p
+.projectitem h4, .projectitem p, .weblogitem h4, .weblogitem p
 {
     margin: 0;
 }
-.projectitem h4
+.projectitem h4, .weblogitem h4
 {
     color: #e4e9f0;
 }
-.projectitem p
+.projectitem p, .weblogitem p
 {
     font-weight: 400;
     font-size: 16px;
     color:#b5bac1;
     
 }
-.projectitem a
+.projectitem a, .weblogitem a
 {
     text-decoration: none;
     display: flex;
@@ -254,7 +266,7 @@ footer {
     .titlediv {
         flex-wrap: wrap;
     }
-    .main, .projects, .cureentlyusing, .links .other {
+    .main, .projects, .webloglist .cureentlyusing, .links, .other, .weblog {
         margin-left: 15px;
         margin-right: 15px;
         padding: 0;
@@ -270,7 +282,7 @@ footer {
     {
         width: 100%;
     }
-    .projectitem
+    .projectitem, .weblogitem
     {
         width: 100%;
     }
@@ -318,4 +330,13 @@ footer {
     color: transparent;
     margin-bottom: 0;
 
+}
+pre
+{
+    background-color: #0000003f;
+    border: 1px solid #e4e9f03f
+}
+code
+{
+    /* background-color: #0000003f; */
 }
