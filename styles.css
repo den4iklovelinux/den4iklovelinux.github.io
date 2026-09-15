@@ -266,9 +266,9 @@ footer {
     .titlediv {
         flex-wrap: wrap;
     }
-    .main, .projects, .webloglist .cureentlyusing, .links, .other, .weblog {
-        margin-left: 15px;
-        margin-right: 15px;
+    .main, .projects, .webloglist, .cureentlyusing, .links, .other, .weblog {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
         padding: 0;
     }
     .header, .projects h1, .cureentlyusing h1, .other h1 {
