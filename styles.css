@@ -355,3 +355,56 @@ code
 {
     /* background-color: #0000003f; */
 }
+
+.fullscreen-block {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: repeating-linear-gradient(
+    -45deg,
+    #2a2e33,
+    #2a2e33 10px,
+    #e4e9f0 10px,
+    #e4e9f0 20px
+  );
+  animation: drift 18s linear infinite;
+  display: none; 
+  transform: translateY(100%);
+}
+
+.fullscreen-block.startTransition {
+  display: block;
+  animation: startTrans 1s cubic-bezier(.86,0,.07,1) forwards, scrollBg 10s linear infinite;
+}
+
+@keyframes scrollBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 500px 0; 
+  }
+}
+@keyframes startTrans {
+  from {
+    transform: translateY(100%);   
+  }
+  50% {
+    transform: translateY(0);
+  }
+  85%
+  {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.fullscreen-block.endTransition {
+  display: block;
+  animation: endTrans 0.5s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
+}
