@@ -110,7 +110,7 @@ async function loadWebring() {
     initWebring(data);
   } catch (error) {
     console.error(error);
-    document.getElementById('circle-menu').textContent = 'Webring building gailes';
+    document.getElementById('circle-menu').textContent = 'Webring building failed';
   }
 }
 
