@@ -298,6 +298,12 @@ footer {
         flex-wrap: wrap;
         min-width: 0;
     }
+    .circle-menu {
+        width: 600px;
+        height: 400px;
+        margin: 0px 0px !important;
+  
+    }
 }
 .mutual {
     padding: 10px;
@@ -408,3 +414,34 @@ code
   display: block;
   animation: endTrans 0.5s cubic-bezier(.68, -0.55, .27, 1.55) forwards;
 }
+
+.circle-menu {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  margin: 0px auto;
+  
+}
+
+.menu-link {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  transform: translate(-50%, -50%);
+}
+
+.menu-link:hover {
+  transform: translate(-50%, -50%) scale(1.15);
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
